@@ -1,0 +1,133 @@
+*{
+	box-sizing: content-box;
+}
+body{
+margin: 0%;
+font-family: 'rowdies', serif;
+height: 100vh;
+background: black;
+ overflow-x: hidden;
+}
+img{
+	width: 100%;
+}
+.bg{  
+	height: 100vh;
+	background-image: url('../assets/1.jpg');
+	background-size: cover;
+}
+svg{
+	width: 1em;
+	margin:2em auto;
+	display:block;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+.container{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	display: grid; 
+	place-content: center;
+}
+.content{
+	color: white;
+	text-align: center;
+   margin-bottom:10px;
+	 h1{
+		font-size: 4rem;
+		font-weight: normal;
+		margin-bottom: 0;
+	 }
+	 p{
+		font-size: 1.3em;
+	 }
+	 .text-reveal {
+		 clip-path:polygon(0 0, 100% 0, 100% 0, 0 0);
+		 transition:all 1.5s;
+		 transform:translateY(-3em);
+
+		}
+}
+.content-cards{
+	position: absolute;
+	top:60%;
+
+.locations-container {
+	position: relative;
+	bottom:0;
+	display: flex;
+
+	.info {
+			background: white;
+			padding: 1.5em;
+			position: relative;
+			margin-top: -.5em;
+
+			.title {
+					font-size: 2rem;
+					margin-top: -5.5em;
+					margin-bottom: 2.5em;
+					font-weight: bold;
+
+					span {
+							display: block;
+					}
+			}
+	}
+
+}
+}
+.local {
+	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	opacity: 0;
+	transform: translateY(2em);
+}
+
+img {
+	width: 100%;
+	height: 15em;
+	object-fit: cover;
+}
+.locations-container.next{
+	position: relative;
+	bottom: 0;
+	display: flex;
+}
+.btn-pill{
+position: absolute;
+display: flex;
+place-content: center;
+right: 30;
+top:150
+
+}
+.pill-btn{
+	background: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 4px 12px;
+	 margin: 2px;
+	color: black;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .3s;
+	&:hover{
+		background: black;
+		color: white;
+	}
+}
+.link{
+	background: #0077B5;
+	color: white;
+}
+ .git{
+	background: #24292e;
+	color: white;
+}
+.twitter{
+	background: #0077B5;
+	color: white;
+}
